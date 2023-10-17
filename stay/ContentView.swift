@@ -1,0 +1,56 @@
+//
+//  ContentView.swift
+//  stay
+//
+//  Created by dgsw8th26 on 10/17/23.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            TabView {
+                HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("홈")
+                }
+                HomeView()
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("커뮤니티")
+                }
+                HomeView()
+                .tabItem {
+                    Image(systemName: "flag.fill")
+                    Text("여행코스")
+                }
+                Weather___Bus_View()
+                .tabItem {
+                    Image(systemName: "backpack.fill")
+                    Text("정보")
+                }
+                HomeView()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("마이페이지")
+                }
+            }
+            .accentColor(Color(red: 0.04, green: 0.25, blue: 0.61))
+            .navigationBarItems(leading:
+            HStack {
+                Image("STAY")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.leading, 20)
+                Spacer()
+            }
+            )
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
