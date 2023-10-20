@@ -24,6 +24,7 @@ struct Weather_View: View {
                             .weight(.medium)
                     )
                     .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
+                Spacer().frame(height: 8)
                 weekweatherView()
             }
         }

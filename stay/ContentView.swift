@@ -29,7 +29,7 @@ struct ContentView: View {
                 Weather___Bus_View()
                 .tabItem {
                     Image(systemName: "backpack.fill")
-                    Text("정보")
+                    Text("여행정보")
                 }
                 HomeView()
                 .tabItem {

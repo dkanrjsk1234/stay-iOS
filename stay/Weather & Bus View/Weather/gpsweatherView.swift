@@ -15,7 +15,7 @@ struct gpsweatherView: View {
         .weight(.medium)
         )
         .foregroundColor(.black)
-        Text("25")
+        Text("25°")
         .font(
         Font.custom("Pretendard", size: 55)
         .weight(.medium)
@@ -28,7 +28,7 @@ struct gpsweatherView: View {
         )
         .foregroundColor(.black)
         HStack {
-            Text("최고:28   최저:20")
+            Text("최고:28°   최저:20°")
             .font(
             Font.custom("Pretendard", size: 13)
             .weight(.medium)
