@@ -19,6 +19,8 @@
 		4D644B7C2ADE731900C71CA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D644B7B2ADE731900C71CA8 /* ContentView.swift */; };
 		4D644B7E2ADE731900C71CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D644B7D2ADE731900C71CA8 /* Assets.xcassets */; };
 		4D644B812ADE731900C71CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D644B802ADE731900C71CA8 /* Preview Assets.xcassets */; };
+		4D9729502AE7B71700054802 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D97294F2AE7B71700054802 /* MypageView.swift */; };
+		4D9729532AE7B74E00054802 /* TravelcourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9729522AE7B74E00054802 /* TravelcourseView.swift */; };
 		7A86F12A2AE7AD51006E9708 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F1292AE7AD51006E9708 /* loginView.swift */; };
 		7A86F12C2AE7ADF4006E9708 /* signinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F12B2AE7ADF4006E9708 /* signinView.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,8 @@
 		4D644B7B2ADE731900C71CA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D644B7D2ADE731900C71CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D644B802ADE731900C71CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D97294F2AE7B71700054802 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
+		4D9729522AE7B74E00054802 /* TravelcourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelcourseView.swift; sourceTree = "<group>"; };
 		7A86F1292AE7AD51006E9708 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		7A86F12B2AE7ADF4006E9708 /* signinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +108,9 @@
 				4D644B792ADE731900C71CA8 /* stayApp.swift */,
 				4D644B7B2ADE731900C71CA8 /* ContentView.swift */,
 				4D34714F2ADEA62F00EBB709 /* searchView.swift */,
-				4D3471442ADE773600EBB709 /* HomeView.swift */,
+				4D9729512AE7B72700054802 /* Travelcourse */,
+				4D97294E2AE7B70A00054802 /* My */,
+				4D97294B2AE7B6C900054802 /* Main */,
 				4D34714E2ADEA5D400EBB709 /* Weather */,
 				4D644B7D2ADE731900C71CA8 /* Assets.xcassets */,
 				4D644B7F2ADE731900C71CA8 /* Preview Content */,
@@ -118,6 +124,30 @@
 				4D644B802ADE731900C71CA8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D97294B2AE7B6C900054802 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4D3471442ADE773600EBB709 /* HomeView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4D97294E2AE7B70A00054802 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				4D97294F2AE7B71700054802 /* MypageView.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		4D9729512AE7B72700054802 /* Travelcourse */ = {
+			isa = PBXGroup;
+			children = (
+				4D9729522AE7B74E00054802 /* TravelcourseView.swift */,
+			);
+			path = Travelcourse;
 			sourceTree = "<group>";
 		};
 		7A86F1282AE7AC86006E9708 /* login */ = {
@@ -200,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3471452ADE773600EBB709 /* HomeView.swift in Sources */,
+				4D9729532AE7B74E00054802 /* TravelcourseView.swift in Sources */,
+				4D9729502AE7B71700054802 /* MypageView.swift in Sources */,
 				4D19DDEC2AE242AC004CFA2F /* todayweatherone.swift in Sources */,
 				7A86F12C2AE7ADF4006E9708 /* signinView.swift in Sources */,
 				4D34714D2ADEA5CD00EBB709 /* gpsweatherView.swift in Sources */,
