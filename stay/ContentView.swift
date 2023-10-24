@@ -18,18 +18,13 @@ struct ContentView: View {
                 }
                 HomeView()
                 .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("커뮤니티")
-                }
-                HomeView()
-                .tabItem {
                     Image(systemName: "flag.fill")
                     Text("여행코스")
                 }
-                Weather___Bus_View()
+                Weather_View()
                 .tabItem {
-                    Image(systemName: "backpack.fill")
-                    Text("여행정보")
+                    Image(systemName: "sun.max.fill")
+                    Text("날씨")
                 }
                 HomeView()
                 .tabItem {

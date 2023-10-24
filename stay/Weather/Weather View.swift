@@ -28,6 +28,7 @@ struct Weather_View: View {
                 weekweatherView()
             }
         }
+        .padding(.top,50)
     }
 }
 

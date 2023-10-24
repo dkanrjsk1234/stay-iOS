@@ -10,9 +10,7 @@
 		4D19DDEC2AE242AC004CFA2F /* todayweatherone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D19DDEB2AE242AC004CFA2F /* todayweatherone.swift */; };
 		4D19DDEF2AE2435E004CFA2F /* weekweatherone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D19DDEE2AE2435E004CFA2F /* weekweatherone.swift */; };
 		4D3471452ADE773600EBB709 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3471442ADE773600EBB709 /* HomeView.swift */; };
-		4D3471472ADE869900EBB709 /* Weather & Bus View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3471462ADE869900EBB709 /* Weather & Bus View.swift */; };
 		4D3471492ADE9CE000EBB709 /* Weather View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3471482ADE9CE000EBB709 /* Weather View.swift */; };
-		4D34714B2ADE9CEC00EBB709 /* Bus View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34714A2ADE9CEC00EBB709 /* Bus View.swift */; };
 		4D34714D2ADEA5CD00EBB709 /* gpsweatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34714C2ADEA5CD00EBB709 /* gpsweatherView.swift */; };
 		4D3471502ADEA62F00EBB709 /* searchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34714F2ADEA62F00EBB709 /* searchView.swift */; };
 		4D3471542ADEA73700EBB709 /* todayweatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3471532ADEA73700EBB709 /* todayweatherView.swift */; };
@@ -29,9 +27,7 @@
 		4D19DDEB2AE242AC004CFA2F /* todayweatherone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayweatherone.swift; sourceTree = "<group>"; };
 		4D19DDEE2AE2435E004CFA2F /* weekweatherone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekweatherone.swift; sourceTree = "<group>"; };
 		4D3471442ADE773600EBB709 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		4D3471462ADE869900EBB709 /* Weather & Bus View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weather & Bus View.swift"; sourceTree = "<group>"; };
 		4D3471482ADE9CE000EBB709 /* Weather View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weather View.swift"; sourceTree = "<group>"; };
-		4D34714A2ADE9CEC00EBB709 /* Bus View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bus View.swift"; sourceTree = "<group>"; };
 		4D34714C2ADEA5CD00EBB709 /* gpsweatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpsweatherView.swift; sourceTree = "<group>"; };
 		4D34714F2ADEA62F00EBB709 /* searchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchView.swift; sourceTree = "<group>"; };
 		4D3471532ADEA73700EBB709 /* todayweatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayweatherView.swift; sourceTree = "<group>"; };
@@ -85,24 +81,6 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
-		4D3471512ADEA65400EBB709 /* Weather & Bus View */ = {
-			isa = PBXGroup;
-			children = (
-				4D3471462ADE869900EBB709 /* Weather & Bus View.swift */,
-				4D34714E2ADEA5D400EBB709 /* Weather */,
-				4D3471522ADEA66800EBB709 /* Bus */,
-			);
-			path = "Weather & Bus View";
-			sourceTree = "<group>";
-		};
-		4D3471522ADEA66800EBB709 /* Bus */ = {
-			isa = PBXGroup;
-			children = (
-				4D34714A2ADE9CEC00EBB709 /* Bus View.swift */,
-			);
-			path = Bus;
-			sourceTree = "<group>";
-		};
 		4D644B6D2ADE731800C71CA8 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +105,7 @@
 				4D644B7B2ADE731900C71CA8 /* ContentView.swift */,
 				4D34714F2ADEA62F00EBB709 /* searchView.swift */,
 				4D3471442ADE773600EBB709 /* HomeView.swift */,
-				4D3471512ADEA65400EBB709 /* Weather & Bus View */,
+				4D34714E2ADEA5D400EBB709 /* Weather */,
 				4D644B7D2ADE731900C71CA8 /* Assets.xcassets */,
 				4D644B7F2ADE731900C71CA8 /* Preview Content */,
 			);
@@ -228,11 +206,9 @@
 				4D3471542ADEA73700EBB709 /* todayweatherView.swift in Sources */,
 				4D644B7C2ADE731900C71CA8 /* ContentView.swift in Sources */,
 				4D19DDEF2AE2435E004CFA2F /* weekweatherone.swift in Sources */,
-				4D3471472ADE869900EBB709 /* Weather & Bus View.swift in Sources */,
 				4D3471502ADEA62F00EBB709 /* searchView.swift in Sources */,
 				4D3471492ADE9CE000EBB709 /* Weather View.swift in Sources */,
 				4D3471562ADEAB0400EBB709 /* weekweatherView.swift in Sources */,
-				4D34714B2ADE9CEC00EBB709 /* Bus View.swift in Sources */,
 				4D644B7A2ADE731900C71CA8 /* stayApp.swift in Sources */,
 				7A86F12A2AE7AD51006E9708 /* loginView.swift in Sources */,
 			);
