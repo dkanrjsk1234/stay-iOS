@@ -118,17 +118,17 @@ struct signinView: View {
     }
 }
 
-//이메일 형식 확인 함수
-func email(str: String) -> Bool {
-    let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
-    return  NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: str)
-}
-
-//비밀번호 형식 확인 함수
-func checkPassword(str: String) -> Bool {
-    let passwordRegex = "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,50}"
-    return  NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: str)
-}
+////이메일 형식 확인 함수
+//func email(str: String) -> Bool {
+//    let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+//    return  NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: str)
+//}
+//
+////비밀번호 형식 확인 함수
+//func checkPassword(str: String) -> Bool {
+//    let passwordRegex = "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,50}"
+//    return  NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: str)
+//}
 
 
 
