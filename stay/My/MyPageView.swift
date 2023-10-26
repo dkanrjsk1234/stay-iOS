@@ -17,9 +17,7 @@ struct MyPageView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 60, height: 60)
-                    .clipShape(Circle())
                     .padding(.leading, 35)
-                
                 
                 Text("비회원입니다")
                     .font(
@@ -29,7 +27,9 @@ struct MyPageView: View {
                     .padding(.leading, 17)
             }
             .padding(.trailing, 143)
+            
             //로그인, 로그아웃
+            //loginView()
             HStack{
                 Image(systemName: "rectangle.portrait.and.arrow.forward")
                     .resizable()
