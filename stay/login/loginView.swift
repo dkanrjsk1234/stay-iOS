@@ -7,36 +7,16 @@
 
 import SwiftUI
 
-struct loginView: View {
+struct LoginView: View {
     @State var name: String = ""
     @State var password: String = ""
+    @State private var isSigninViewActive: Bool = false
+    @State private var showAlert: Bool = false
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             VStack {
-                
-                HStack {
-                    Image(systemName: "chevron.left")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 14, height: 22.4)
-                    
-                        .padding(.leading, 42)
-                    Spacer()
-                }
-                
-                    
-                
-                Image("STAY")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 74, height: 34)
-                
-//                    .clipped()
-                    .padding(.bottom, 91)
-                
                 ZStack {
-                    
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 310, height: 55)
@@ -52,12 +32,10 @@ struct loginView: View {
                         )
                         .frame(width: 265, height: 10)
                 }
-                
                 .padding(.bottom, 16)
-                
+                .padding(.top, 30)
                 
                 ZStack {
-                    
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 310, height: 55)
@@ -72,40 +50,59 @@ struct loginView: View {
                                 .weight(.medium)
                         )
                         .frame(width: 265, height: 10)
-                    
                 }
                 .padding(.bottom, 45)
                 
-                
                 VStack(spacing: 16) {
-                    Button {
-                        
-                    }label: {
-                        RoundedRectangle(cornerRadius: 10)
+                    Button(action: {
+                        if isValidUser() {
+                            isSigninViewActive = false
+                        } else {
+                            showAlert = true
+                        }
+                    }) {Text("로그인")
+                            .font(.custom("로그인", size: 20))
+                            .tint(.white)
                             .frame(width: 310, height: 60)
-                            .foregroundColor(Color(red: 0.04, green: 0.25, blue: 0.61))
-                            .overlay {
-                                Text("로그인")
-                                    .font(.custom("로그인", size: 20)
-                                    )
-                                    .tint(.white)
-                            }
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color(red: 0.04, green: 0.25, blue: 0.61))
+                            )
                     }
+                    .alert(isPresented: $showAlert) {
+                        Alert(
+                            title: Text("로그인 실패"),
+                            message: Text("아이디 또는 비밀번호가 일치하지 않습니다."),
+                            dismissButton: .default(Text("확인"))
+                        )
+                    }
+                    NavigationLink(destination: signinView(), isActive: $isSigninViewActive) {
+                        Text("회원가입")
+                            .font(.custom("회원가입", size: 15))
+                            .tint(.gray)
+                    }
+                    .navigationBarBackButtonHidden(true)
                 }
+                .navigationBarBackButtonHidden(true)
+            
                 
-                //signinView()
-                ZStack{Button{
-                    print("회원가입")
-                }label: {
-                    Text("회원가입")
-                }
-                }
                 Spacer()
             }
         }
     }
+    private func isValidUser() -> Bool {
+            // 실제로는 서버와 통신하여 인증하는 것이 안전하고 실용적
+            return name == "admin" && password == "password"
+        }
+    
 }
 
-#Preview {
-    loginView()
+
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+    }
 }
+
+
+

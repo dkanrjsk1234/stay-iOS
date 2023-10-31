@@ -9,50 +9,59 @@ import SwiftUI
 
 struct MyPageView: View {
     @State var name: String = ""
+    @State private var isLoggedIn: Bool = false
     var body: some View {
-        VStack{
-            //회원 비회원
-            HStack{
-                Image("person")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 60, height: 60)
-                    .padding(.leading, 35)
+        NavigationView {
+            VStack{
+                //회원 비회원
+                HStack{
+                    Image("person")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
+                        .padding(.leading, 35)
+                    
+                    Text(isLoggedIn ? "회원입니다" : "비회원입니다")
+                        .font(
+                            Font.custom("Inter", size: 25)
+                                .weight(.medium)
+                        )
+                        .padding(.leading, 17)
+                }
+                .padding(.trailing, 143)
                 
-                Text("비회원입니다")
-                    .font(
-                        Font.custom("Inter", size: 25)
-                            .weight(.medium)
-                    )
-                    .padding(.leading, 17)
+                NavigationLink(destination: LoginView(), isActive: $isLoggedIn) {
+                    HStack {
+                        Image(systemName: "rectangle.portrait.and.arrow.forward")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 35, height: 35)
+                            .padding(.leading, 37)
+                        Text("로그인")
+                            .font(
+                                Font.custom("Inter", size: 20)
+                                    .weight(.medium)
+                            )
+                        
+                            .padding(.leading, 13)
+                    }
+                    .foregroundColor(.black)
+                    .padding(.top, 35)
+                    .padding(.bottom, 455)
+                    Spacer()
+                }
+                .navigationBarBackButtonHidden(true)
             }
-            .padding(.trailing, 143)
-            
-            //로그인, 로그아웃
-            //loginView()
-            HStack{
-                Image(systemName: "rectangle.portrait.and.arrow.forward")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 35, height: 35)
-                    .padding(.leading, 37)
-    
-                Text("로그인")
-                    .font(
-                        Font.custom("Inter", size: 20)
-                            .weight(.medium)
-                    )
-                    .padding(.leading, 13)
-            }
-            .padding(.trailing, 235)
-            .padding(.top, 35)
-            
-            Spacer()
         }
-        .padding(.top, 70)
+        .navigationBarBackButtonHidden(true)
+    }
+    
+    struct MyPageView_Previews: PreviewProvider {
+        static var previews: some View {
+            MyPageView()
+        }
     }
 }
-
 #Preview {
     MyPageView()
 }

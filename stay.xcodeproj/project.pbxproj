@@ -104,10 +104,10 @@
 		4D644B782ADE731900C71CA8 /* stay */ = {
 			isa = PBXGroup;
 			children = (
-				7A86F1282AE7AC86006E9708 /* login */,
 				4D644B792ADE731900C71CA8 /* stayApp.swift */,
 				4D644B7B2ADE731900C71CA8 /* ContentView.swift */,
 				4D34714F2ADEA62F00EBB709 /* searchView.swift */,
+				7A86F1282AE7AC86006E9708 /* login */,
 				4D3471442ADE773600EBB709 /* HomeView.swift */,
 				7A0DDF802AE7B8D800F4D030 /* My */,
 				4D34714E2ADEA5D400EBB709 /* Weather */,
