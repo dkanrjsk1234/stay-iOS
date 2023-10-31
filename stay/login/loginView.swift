@@ -10,24 +10,30 @@ import SwiftUI
 struct loginView: View {
     @State var name: String = ""
     @State var password: String = ""
+    
     var body: some View {
         NavigationView{
             VStack {
                 
-                Image(systemName: "chevron.left")
-                    .frame(width: 14, height: 22.4)
-                    .padding(.leading, 42)
-                    .padding(.trailing, 337)
-                    .padding(.top, 35)
-                    .padding(.bottom, 45.6)
+                HStack {
+                    Image(systemName: "chevron.left")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 14, height: 22.4)
+                    
+                        .padding(.leading, 42)
+                    Spacer()
+                }
+                
+                    
                 
                 Image("STAY")
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .scaledToFit()
                     .frame(width: 74, height: 34)
-                    .clipped()
-                    .padding(.bottom, 91)
                 
+//                    .clipped()
+                    .padding(.bottom, 91)
                 
                 ZStack {
                     
@@ -70,34 +76,24 @@ struct loginView: View {
                 }
                 .padding(.bottom, 45)
                 
-                ZStack {Button{
-                    
-                    print("로그인")
-                }label: {
-                    Text("로그인")
-                        .fontWeight(.bold)
-                        .frame(width: 310, height: 60)
-                        .background(Color(red: 0.04, green: 0.25, blue: 0.61))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                
+                VStack(spacing: 16) {
+                    Button {
+                        
+                    }label: {
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 310, height: 60)
+                            .foregroundColor(Color(red: 0.04, green: 0.25, blue: 0.61))
+                            .overlay {
+                                Text("로그인")
+                                    .font(.custom("로그인", size: 20)
+                                    )
+                                    .tint(.white)
+                            }
+                    }
                 }
-                }
-//                NavigationLink(destination: singin()) {
-//                                    Text("회원가입")
-//                                }
-//                                .frame(width: 350, height: 20)
-//                                .buttonStyle(PlainButtonStyle())
-//                                .foregroundColor(Color.white)
-//                                .padding()
-//                                .background(Color("#243062"))
-//                                .cornerRadius(10)
                 
-                
-                
-                
-                
-                
-                
+                //signinView()
                 ZStack{Button{
                     print("회원가입")
                 }label: {

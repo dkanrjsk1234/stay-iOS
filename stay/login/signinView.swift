@@ -15,6 +15,7 @@ struct signinView: View {
     var body: some View {
         VStack{
             //화살표
+            HomeView()
             Image(systemName: "chevron.left")
                 .frame(width: 14, height: 22.4)
                 .padding(.leading, 42)
@@ -101,33 +102,27 @@ struct signinView: View {
                     .padding(.bottom, 13)
                 
                 //회원가입
-                Button{
-                    print("회원가입")
-                }label: {
-                    Text("회원가입")
-                        .fontWeight(.bold)
-                        .frame(width: 310, height: 60)
-                        .background(Color(red: 0.04, green: 0.25, blue: 0.61))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                VStack(spacing: 16) {
+                    Button {
+                        
+                    }label: {
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 310, height: 60)
+                            .foregroundColor(Color(red: 0.04, green: 0.25, blue: 0.61))
+                            .overlay {
+                                Text("회원가입")
+                                    .font(.custom("회원가입", size: 20)
+                                    )
+                                    .tint(.white)
+                            }
+                    }
                 }
+
                 .padding(.top, 38)
             }
             .padding(.bottom, 320)
         }
     }
-}
-
-//이메일 형식 확인 함수
-func email(str: String) -> Bool {
-    let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
-    return  NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: str)
-}
-
-//비밀번호 형식 확인 함수
-func checkPassword(str: String) -> Bool {
-    let passwordRegex = "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,50}"
-    return  NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: str)
 }
 
 
