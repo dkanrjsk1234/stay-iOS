@@ -16,7 +16,7 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("홈")
                 }
-                HomeView()
+                TravelcourseView()
                 .tabItem {
                     Image(systemName: "flag.fill")
                     Text("여행코스")

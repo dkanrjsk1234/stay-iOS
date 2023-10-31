@@ -15,12 +15,17 @@
 		4D3471502ADEA62F00EBB709 /* searchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34714F2ADEA62F00EBB709 /* searchView.swift */; };
 		4D3471542ADEA73700EBB709 /* todayweatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3471532ADEA73700EBB709 /* todayweatherView.swift */; };
 		4D3471562ADEAB0400EBB709 /* weekweatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3471552ADEAB0400EBB709 /* weekweatherView.swift */; };
+		4D4459612AF0EB9A0050F3E2 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4459602AF0EB9A0050F3E2 /* ActivityView.swift */; };
+		4D4459632AF0EBA30050F3E2 /* HealingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4459622AF0EBA30050F3E2 /* HealingView.swift */; };
+		4D4459652AF0EBB00050F3E2 /* LowmoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4459642AF0EBB00050F3E2 /* LowmoneyView.swift */; };
+		4D4459672AF0EBBF0050F3E2 /* PhotozoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4459662AF0EBBF0050F3E2 /* PhotozoneView.swift */; };
 		4D644B7A2ADE731900C71CA8 /* stayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D644B792ADE731900C71CA8 /* stayApp.swift */; };
 		4D644B7C2ADE731900C71CA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D644B7B2ADE731900C71CA8 /* ContentView.swift */; };
 		4D644B7E2ADE731900C71CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D644B7D2ADE731900C71CA8 /* Assets.xcassets */; };
 		4D644B812ADE731900C71CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D644B802ADE731900C71CA8 /* Preview Assets.xcassets */; };
 		4D9729502AE7B71700054802 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D97294F2AE7B71700054802 /* MypageView.swift */; };
 		4D9729532AE7B74E00054802 /* TravelcourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9729522AE7B74E00054802 /* TravelcourseView.swift */; };
+		4DF8D3F62AE7BD4500ABD4C0 /* CountrySecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8D3F52AE7BD4500ABD4C0 /* CountrySecView.swift */; };
 		7A86F12A2AE7AD51006E9708 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F1292AE7AD51006E9708 /* loginView.swift */; };
 		7A86F12C2AE7ADF4006E9708 /* signinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F12B2AE7ADF4006E9708 /* signinView.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +39,10 @@
 		4D34714F2ADEA62F00EBB709 /* searchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchView.swift; sourceTree = "<group>"; };
 		4D3471532ADEA73700EBB709 /* todayweatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayweatherView.swift; sourceTree = "<group>"; };
 		4D3471552ADEAB0400EBB709 /* weekweatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekweatherView.swift; sourceTree = "<group>"; };
+		4D4459602AF0EB9A0050F3E2 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		4D4459622AF0EBA30050F3E2 /* HealingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealingView.swift; sourceTree = "<group>"; };
+		4D4459642AF0EBB00050F3E2 /* LowmoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowmoneyView.swift; sourceTree = "<group>"; };
+		4D4459662AF0EBBF0050F3E2 /* PhotozoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotozoneView.swift; sourceTree = "<group>"; };
 		4D644B762ADE731900C71CA8 /* stay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D644B792ADE731900C71CA8 /* stayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stayApp.swift; sourceTree = "<group>"; };
 		4D644B7B2ADE731900C71CA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +50,7 @@
 		4D644B802ADE731900C71CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D97294F2AE7B71700054802 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
 		4D9729522AE7B74E00054802 /* TravelcourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelcourseView.swift; sourceTree = "<group>"; };
+		4DF8D3F52AE7BD4500ABD4C0 /* CountrySecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySecView.swift; sourceTree = "<group>"; };
 		7A86F1292AE7AD51006E9708 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		7A86F12B2AE7ADF4006E9708 /* signinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3471442ADE773600EBB709 /* HomeView.swift */,
+				4DF8D3F52AE7BD4500ABD4C0 /* CountrySecView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -146,6 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				4D9729522AE7B74E00054802 /* TravelcourseView.swift */,
+				4D4459602AF0EB9A0050F3E2 /* ActivityView.swift */,
+				4D4459622AF0EBA30050F3E2 /* HealingView.swift */,
+				4D4459642AF0EBB00050F3E2 /* LowmoneyView.swift */,
+				4D4459662AF0EBBF0050F3E2 /* PhotozoneView.swift */,
 			);
 			path = Travelcourse;
 			sourceTree = "<group>";
@@ -230,17 +245,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3471452ADE773600EBB709 /* HomeView.swift in Sources */,
+				4DF8D3F62AE7BD4500ABD4C0 /* CountrySecView.swift in Sources */,
 				4D9729532AE7B74E00054802 /* TravelcourseView.swift in Sources */,
 				4D9729502AE7B71700054802 /* MypageView.swift in Sources */,
 				4D19DDEC2AE242AC004CFA2F /* todayweatherone.swift in Sources */,
+				4D4459612AF0EB9A0050F3E2 /* ActivityView.swift in Sources */,
 				7A86F12C2AE7ADF4006E9708 /* signinView.swift in Sources */,
 				4D34714D2ADEA5CD00EBB709 /* gpsweatherView.swift in Sources */,
 				4D3471542ADEA73700EBB709 /* todayweatherView.swift in Sources */,
+				4D4459632AF0EBA30050F3E2 /* HealingView.swift in Sources */,
+				4D4459652AF0EBB00050F3E2 /* LowmoneyView.swift in Sources */,
 				4D644B7C2ADE731900C71CA8 /* ContentView.swift in Sources */,
 				4D19DDEF2AE2435E004CFA2F /* weekweatherone.swift in Sources */,
 				4D3471502ADEA62F00EBB709 /* searchView.swift in Sources */,
 				4D3471492ADE9CE000EBB709 /* Weather View.swift in Sources */,
 				4D3471562ADEAB0400EBB709 /* weekweatherView.swift in Sources */,
+				4D4459672AF0EBBF0050F3E2 /* PhotozoneView.swift in Sources */,
 				4D644B7A2ADE731900C71CA8 /* stayApp.swift in Sources */,
 				7A86F12A2AE7AD51006E9708 /* loginView.swift in Sources */,
 			);

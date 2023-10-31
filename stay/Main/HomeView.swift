@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("서비스 준비중..")
+        searchView()
     }
 }
 
