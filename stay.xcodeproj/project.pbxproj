@@ -41,6 +41,7 @@
 		7A0DDF812AE7B90A00F4D030 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		7A86F1292AE7AD51006E9708 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		7A86F12B2AE7ADF4006E9708 /* signinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinView.swift; sourceTree = "<group>"; };
+		7AAB97232AE9F087002E4162 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +87,7 @@
 		4D644B6D2ADE731800C71CA8 = {
 			isa = PBXGroup;
 			children = (
-				7A86F1282AE7AC86006E9708 /* login */,
+				7AAB97232AE9F087002E4162 /* README.md */,
 				4D644B782ADE731900C71CA8 /* stay */,
 				4D644B772ADE731900C71CA8 /* Products */,
 			);
@@ -103,6 +104,7 @@
 		4D644B782ADE731900C71CA8 /* stay */ = {
 			isa = PBXGroup;
 			children = (
+				7A86F1282AE7AC86006E9708 /* login */,
 				4D644B792ADE731900C71CA8 /* stayApp.swift */,
 				4D644B7B2ADE731900C71CA8 /* ContentView.swift */,
 				4D34714F2ADEA62F00EBB709 /* searchView.swift */,
