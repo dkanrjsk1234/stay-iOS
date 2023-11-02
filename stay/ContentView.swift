@@ -26,7 +26,7 @@ struct ContentView: View {
                     Image(systemName: "sun.max.fill")
                     Text("날씨")
                 }
-                HomeView()
+                MyPageView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("마이페이지")

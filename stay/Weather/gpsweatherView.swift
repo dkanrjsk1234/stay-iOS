@@ -36,6 +36,7 @@ struct gpsweatherView: View {
             .foregroundColor(.black)
         }
     }
+    
 }
 
 #Preview {
