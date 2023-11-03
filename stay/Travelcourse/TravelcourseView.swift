@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TravelcourseView: View {
     var body: some View {
-        ScrollView{
+        ScrollView(showsIndicators: false){
             VStack(alignment:.leading,spacing:15) {
                 Spacer()
                 ScrollView(.horizontal) {

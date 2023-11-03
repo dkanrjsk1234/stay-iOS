@@ -18,15 +18,9 @@ struct todayweatherView: View {
             ScrollView(.horizontal){
                 HStack(spacing:20) {
                     Spacer()
-                    todayweatherone()
-                    todayweatherone()
-                    todayweatherone()
-                    todayweatherone()
-                    todayweatherone()
-                    todayweatherone()
-                    todayweatherone()
-                    todayweatherone()
-                    todayweatherone()
+                    ForEach (1..<10) { number in
+                        todayweatherone()
+                    }
                     Spacer()
                 }
             }

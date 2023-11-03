@@ -18,19 +18,10 @@ struct weekweatherView: View {
             ScrollView{
                 VStack(spacing:10){
                     Spacer()
-                    weekweatherone()
-                    Divider()
-                    weekweatherone()
-                    Divider()
-                    weekweatherone()
-                    Divider()
-                    weekweatherone()
-                    Divider()
-                    weekweatherone()
-                    Divider()
-                    weekweatherone()
-                    Divider()
-                    weekweatherone()
+                    ForEach (1..<8) { number in
+                        weekweatherone()
+                        Divider()
+                    }
                 }
             }
         }
