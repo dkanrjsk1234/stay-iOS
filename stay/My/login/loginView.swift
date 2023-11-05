@@ -84,16 +84,16 @@ struct LoginView: View {
                     .navigationBarBackButtonHidden(true)
                 }
                 .navigationBarBackButtonHidden(true)
-            
+                
                 
                 Spacer()
             }
         }
     }
     private func isValidUser() -> Bool {
-            // 실제로는 서버와 통신하여 인증하는 것이 안전하고 실용적
-            return name == "admin" && password == "password"
-        }
+        // 실제로는 서버와 통신하여 인증
+        return name == "admin" && password == "password"
+    }
     
 }
 
@@ -103,6 +103,3 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
-
-
-
