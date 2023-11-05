@@ -28,6 +28,7 @@
 		4D644B812ADE731900C71CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D644B802ADE731900C71CA8 /* Preview Assets.xcassets */; };
 		4D9729502AE7B71700054802 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D97294F2AE7B71700054802 /* MypageView.swift */; };
 		4D9729532AE7B74E00054802 /* TravelcourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9729522AE7B74E00054802 /* TravelcourseView.swift */; };
+		4D9DB9562AF771290065FCE2 /* MainPamphlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DB9552AF771290065FCE2 /* MainPamphlet.swift */; };
 		4DF8D3F62AE7BD4500ABD4C0 /* CountrySecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8D3F52AE7BD4500ABD4C0 /* CountrySecView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		4D644B802ADE731900C71CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D97294F2AE7B71700054802 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
 		4D9729522AE7B74E00054802 /* TravelcourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelcourseView.swift; sourceTree = "<group>"; };
+		4D9DB9552AF771290065FCE2 /* MainPamphlet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPamphlet.swift; sourceTree = "<group>"; };
 		4DF8D3F52AE7BD4500ABD4C0 /* CountrySecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySecView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3471442ADE773600EBB709 /* HomeView.swift */,
+				4D9DB9552AF771290065FCE2 /* MainPamphlet.swift */,
 				4DF8D3F52AE7BD4500ABD4C0 /* CountrySecView.swift */,
 			);
 			path = Main;
@@ -265,6 +268,7 @@
 				4D4459632AF0EBA30050F3E2 /* HealingView.swift in Sources */,
 				4D4459652AF0EBB00050F3E2 /* LowmoneyView.swift in Sources */,
 				4D644B7C2ADE731900C71CA8 /* ContentView.swift in Sources */,
+				4D9DB9562AF771290065FCE2 /* MainPamphlet.swift in Sources */,
 				4D19DDEF2AE2435E004CFA2F /* weekweatherone.swift in Sources */,
 				4D3471502ADEA62F00EBB709 /* searchView.swift in Sources */,
 				4D3471492ADE9CE000EBB709 /* Weather View.swift in Sources */,
