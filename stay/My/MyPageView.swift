@@ -20,7 +20,6 @@ struct MyPageView: View {
                         .frame(width: 60, height: 60)
                         .padding(.trailing, 15)
                         .foregroundColor(.gray)
-                    
                     Text(isLoggedIn ? "회원입니다" : "비회원입니다")
                         .font(
                             Font.custom("Inter", size: 25)
